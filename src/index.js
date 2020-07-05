@@ -16,9 +16,9 @@ cli
     .action((options) => {
         execSync('npx create-react-app hql-graphiql',{stdio: 'inherit'})
         execSync('cd hql-graphiql && yarn add graphql graphiql isomorphic-fetch graphql-tag hql-tag && cd ..',{stdio: 'inherit'})
-        execSync('cp -R ./template/index.html ./hql-graphiql/public/index.html')
+        execSync('cp -R ${__dirname}/../template/index.html ./hql-graphiql/public/index.html')
         execSync('rm -f ./hql-graphiql/src/App.css ./hql-graphiql/src/App.js ./hql-graphiql/src/App.test.js ./hql-graphiql/src/logo.svg ./hql-graphiql/src/serviceWorker.js')
-        execSync('cp -R ./README.md ./hql-graphiql/README.md')
+        execSync('cp -R ${__dirname}/../README.md ./hql-graphiql/README.md')
         updateIndexFile(options.init);
         console.log('\x1b[32m%s\x1b[0m','GraphiQL playground is initated with HQL-TAG support');
     })
