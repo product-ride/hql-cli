@@ -15,7 +15,7 @@ cli
     .option('-i, --init [init]', 'Hasura endpoint to run GraphiQL', 'http://localhost:4000/graphql')
     .action((options) => {
         execSync('npx create-react-app hql-graphiql',{stdio: 'inherit'})
-        execSync('cd hql-graphiql && yarn add graphql graphiql isomorphic-fetch graphql-tag hql-tag',{stdio: 'inherit'})
+        execSync('cd hql-graphiql && yarn add graphql graphiql isomorphic-fetch graphql-tag hql-tag && cd ..',{stdio: 'inherit'})
         execSync('cp -R ./template/index.html ./hql-graphiql/public/index.html')
         execSync('rm -f ./hql-graphiql/src/App.css ./hql-graphiql/src/App.js ./hql-graphiql/src/App.test.js ./hql-graphiql/src/logo.svg ./hql-graphiql/src/serviceWorker.js')
         execSync('cp -R ./README.md ./hql-graphiql/README.md')
