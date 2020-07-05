@@ -1,6 +1,6 @@
 {
   "name": "hql-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI tool which initates a GraphiQL playground with hql-tag support.",
   "main": "src/index.js",
   "repository": {
