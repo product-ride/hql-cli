@@ -1,0 +1,32 @@
+{
+  "name": "hql-cli",
+  "version": "1.0.0",
+  "description": "A CLI tool which initates a GraphiQL playground with hql-tag support.",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/product-ride/hql-cli.git"
+  },
+  "bin": {
+    "@vilvaathibanpb/hql-cli": "./src/index.js",
+    "hql-cli": "./src/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hql-tag",
+    "graphiql",
+    "hasura",
+    "graphql",
+    "apollo"
+  ],
+  "author": "Vilva Athiban P B",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^5.1.0"
+  }
+}
