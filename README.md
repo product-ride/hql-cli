@@ -1,6 +1,6 @@
 ## hql-cli: GraphiQL playground
 
-This is a CLI tool which initates a GraphiQL playground with hql-tag support.
+This is a CLI tool which initates a GraphiQL playground with [hql-tag](https://github.com/product-ride/hql-tag) support.
 
 To initate a fresh GraphiQL: 
 
